@@ -84,5 +84,13 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
 
+      - name: Installed dependencies
+        run: composer show -D
+
+      - name: Setup problem matchers
+        run: |
+          echo "::add-matcher::${{ runner.tool_cache }}/php.json"
+          echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
       - name: Run tests
         run: composer test

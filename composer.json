@@ -1,10 +1,8 @@
 {
-    "name": "hosmelq/template",
+    "name": "hosmelq/fault-php",
     "description": "",
     "license": "MIT",
-    "keywords": [
-        "hosmelq"
-    ],
+    "keywords": [],
     "authors": [
         {
             "name": "Hosmel Quintana",
@@ -35,12 +33,15 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "HosmelQ\\Namespace\\": "src/"
-        }
+            "HosmelQ\\Fault\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "HosmelQ\\Namespace\\Tests\\": "tests/"
+            "HosmelQ\\Fault\\Tests\\": "tests/"
         }
     },
     "config": {

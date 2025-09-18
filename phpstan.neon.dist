@@ -8,6 +8,10 @@ parameters:
   checkBenevolentUnionTypes: true
   editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
   errorFormat: ticketswap
+  ignoreErrors:
+    -
+      identifier: typeCoverage.constantTypeCoverage
+      path: src/Code.php
   level: max
   paths:
     - src

@@ -6,10 +6,10 @@ arch()->preset()->php();
 arch()->preset()->security();
 
 arch('annotations')
-    ->expect('HosmelQ\Namespace')
+    ->expect('HosmelQ\Fault')
     ->toHaveMethodsDocumented()
     ->toHavePropertiesDocumented();
 
 arch('strict types')
-    ->expect('HosmelQ\Namespace')
+    ->expect('HosmelQ\Fault')
     ->toUseStrictTypes();
